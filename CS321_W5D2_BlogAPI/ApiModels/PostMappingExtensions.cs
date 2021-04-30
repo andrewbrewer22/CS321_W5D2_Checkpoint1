@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
 using System.Linq;
 using CS321_W5D2_BlogAPI.Core.Models;
@@ -16,9 +16,11 @@ namespace CS321_W5D2_BlogAPI.ApiModels
 				Title = post.Title,
 				Content = post.Content,
 				CommentsAllowed = post.CommentsAllowed,
-                BlogId = post.BlogId,
-                DatePublished = post.DatePublished,
-                // TODO: map blogName and authorName
+				BlogId = post.BlogId,
+				DatePublished = post.DatePublished,
+				AuthorName = post.Blog.User.FullName,
+				BlogName = post.Blog.Name
+
 			};
 		}
 
